@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 'use strict';
 
-$(function() {
+$(document).ready(function() {
   $('#js-shopping-list-form').submit(e => {
     e.preventDefault();
 
     const listItem = $('#shopping-list-entry').val();
 
-    $('.js-shopping-list-entry').val('');
+    $('#shopping-list-entry').val('');
 
     $('.shopping-list').append(
       `<li>
