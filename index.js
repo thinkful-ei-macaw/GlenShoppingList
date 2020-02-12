@@ -24,6 +24,9 @@ $(document).ready(function() {
     );
   });
 
+  //couldn't get the function() below to look like e => {}
+  //Is that even possible?
+
   $('.shopping-list').on('click', '.shopping-item-delete', function() {
     $(this)
       .closest('li')
